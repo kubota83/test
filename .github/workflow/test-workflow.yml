@@ -1,0 +1,10 @@
+name: Test workflow
+
+on:
+jobs:
+  output comment:
+    runs-on: [ "self-hosted" ]
+    steps: comment out
+    run: |
+      echo "hello world"
+      
