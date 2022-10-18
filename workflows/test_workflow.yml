@@ -9,17 +9,3 @@ jobs:
       - name: comment out
         run: |
           echo "hello world"
-      - name: move-test
-        run: |
-          Move-Item ./.github/sample ./.github/workflows
-          Get-ChildItem
-  
-  check_folder:
-    runs-on: [ "self-hosted" ]
-    steps: 
-      - name: check_folder
-        run: |
-          Get-ChildItem
-  
-      
-      
