@@ -1,6 +1,16 @@
 name: Test workflow
 
-on: [push]
+on: 
+  workflow_dispatch:
+    inputs:
+      bottun:
+        type: choice
+        description: select mode
+        required: true
+        default: 'Text'
+        options: 
+        - Test
+        
 
 jobs:
   output_comment:
