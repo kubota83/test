@@ -1,0 +1,21 @@
+name: Test workflow
+
+on: 
+  workflow_dispatch:
+    inputs:
+      bottun:
+        type: choice
+        description: select mode
+        required: true
+        default: 'Text'
+        options: 
+        - Text
+        
+
+jobs:
+  output_comment:
+    runs-on: [ "self-hosted" ]
+    steps: 
+      - name: comment out
+        run: |
+          echo "hello world"
