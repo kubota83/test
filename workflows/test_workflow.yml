@@ -9,7 +9,7 @@ on:
         required: true
         default: 'Text'
         options: 
-        - Test
+        - Text
         
 
 jobs:
