@@ -19,3 +19,9 @@ jobs:
       - name: comment out
         run: |
           echo "hello world"
+      - name: upload file
+        uses: actions/upload-artifact@2
+        with:
+          name: output
+          pass: ${{ github.workspace }}/input/sample.txt
+      
