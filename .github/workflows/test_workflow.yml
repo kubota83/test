@@ -18,7 +18,7 @@ jobs:
     steps: 
       - name: comment out
         run: |
-          echo "hello world2"
+          echo "hello world"
       - name: upload file
         uses: actions/upload-artifact@v2
         with:
