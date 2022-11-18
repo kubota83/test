@@ -4,12 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       bottun:
-        type: choice
+        type: string
         description: select mode
         required: true
         default: 'Text'
-        options: 
-        - Text
+
         
 
 jobs:
